@@ -8,4 +8,3 @@ fibonnaci = function(x) {
     }
 }
 
-fibonnaci(10)
