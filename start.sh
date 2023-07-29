@@ -1,0 +1,1 @@
+source resources/venv/bin/activate
