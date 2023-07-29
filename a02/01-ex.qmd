@@ -1,0 +1,14 @@
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+pop <- rbinom(1000*10000, 1, prob=.6)
+amostras <- matrix(pop, nrow=1000)
+medias <- rowMeans(amostras)
+medias <- tibble(medias)
+medias |>
+  ggplot(aes(x=medias)) +
+  geom_line()
+```
