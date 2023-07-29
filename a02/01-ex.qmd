@@ -4,11 +4,13 @@ library(tidyverse)
 
 
 ```{r}
+set.seed(42)
 pop <- rbinom(1000*10000, 1, prob=.6)
 amostras <- matrix(pop, nrow=1000)
 medias <- rowMeans(amostras)
 medias <- tibble(medias)
+# Density plot
 medias |>
   ggplot(aes(x=medias)) +
-  geom_line()
+  geom_density(fill="blue", alpha=.2)
 ```
