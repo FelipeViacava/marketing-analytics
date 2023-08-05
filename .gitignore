@@ -1,2 +1,5 @@
 venv
-b01/*.pdf
+*.pdf
+*.csv
+*.html
+*.RData
